@@ -8,7 +8,200 @@
 </head>
 
 <body>
+  <div class="page">
+    <header class="page-header">
+      <nav class="page-header__nav main-nav">
+        <div class="page__container page__container--full">
+          <div class="main-nav__wrapper">
+            <div class="main-nav__logo logo logo--active">
+              <a class="logo__link" href="index.html" aria-label="Ссылка с логотипом на главную страницу">
+                <img src="https://via.placeholder.com/74x23">
+              </a>
+              <button class="logo__btn logo__btn--close" type="button">
+                <span class="visually-hidden">Открыть</span>
+              </button>
+            </div>
+            <ul class="main-nav__menu menu menu--active" id="menu">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="photo.html">Фотографии</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="contest.html">Конкурс</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
+    <main class="page-main">
+      <div class="page__container">
+        <h1 class="page-main__title page-main__title--photo">Фотографии пользователей</h1>
+      </div>
+      <div class="page-main__wrapper">
+        <div class="page__container">
+          <p class="page-main__text page-main__text--photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
+        <div class="page-main__photos photos" id="photos">
+          <div class="photos__item photos__item--panorama">
+            <a class="photos__link" href="#">
+              <img src="https://via.placeholder.com/320x137">
+            </a>
+            <div class="page__container">
+              <div class="photos__wrapper photos__wrapper--panorama">
+                <p class="photos__title photos__title--panorama">
+                  <span class="photos__author">Анна</span>
+                  <span class="photos__time">(5 минут назад)</span>
+                </p>
+                <p class="photos__text photos__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <button class="photos__rates photos__rates--panorama" type="button" name="rate-post-1"><span>Нравится:
+                    <span class="photos__rates-value">215</span></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="page__container">
+            <ul class="photos__list">
+              <li class="photos__item">
+                <a class="photos__link" href="#">
+                  <picture class="photos__picture">
+                    <img src="https://via.placeholder.com/280x180">
+                  </picture>
+                </a>
+                <div class="photos__wrapper">
+                  <p class="photos__title">
+                    <span class="photos__author">Левон</span>
+                    <span class="photos__time">(5 часов назад)</span>
+                  </p>
+                  <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <button class="photos__rates" type="button" name="rate-post-2">
+                    <span>Нравится: <span class="photos__rates-value">356</span></span>
+                  </button>
+                </div>
+              </li>
+              <li class="photos__item">
+                <a class="photos__link" href="#">
+                  <img src="https://via.placeholder.com/280x180">
+                </a>
+                <div class="photos__wrapper">
+                  <p class="photos__title">
+                    <span class="photos__author">Антон</span>
+                    <span class="photos__time">(12 часов назад)</span>
+                  </p>
+                  <p class="photos__text">Соседи будут рады!</p>
+                  <button class="photos__rates" type="button" name="rate-post-3">
+                    <span>Нравится: <span class="photos__rates-value">666</span></span>
+                  </button>
+                </div>
+              </li>
+              <li class="photos__item">
+                <a class="photos__link" href="#">
+                  <img src="https://via.placeholder.com/280x180">
+                </a>
+                <div class="photos__wrapper">
+                  <p class="photos__title">
+                    <span class="photos__author">Борис</span>
+                    <span class="photos__time">(20 часов назад)</span>
+                  </p>
+                  <p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <button class="photos__rates" type="button" name="rate-post-4"><span>Нравится:
+                    <span class="photos__rates-value">215</span></span>
+                  </button>
+                </div>
+              </li>
+              <li class="photos__item">
+                <a class="photos__link" href="#">
+                  <img src="https://via.placeholder.com/280x180">
+                </a>
+                <div class="photos__wrapper">
+                  <p class="photos__title">
+                    <span class="photos__author">Сергей</span>
+                    <span class="photos__time">(25 часов назад)</span>
+                  </p>
+                  <p class="photos__text">Самая кубанская в мире!</p>
+                  <button class="photos__rates" type="button" name="rate-post-5">
+                    <span>Нравится: <span class="photos__rates-value">4</span></span>
+                  </button>
+                </div>
+              </li>
+              <li class="photos__item">
+                <a class="photos__link" href="#">
+                    <img src="https://via.placeholder.com/280x180">
+                </a>
+                <div class="photos__wrapper">
+                  <p class="photos__title">
+                    <span class="photos__author">Максим</span>
+                    <span class="photos__time">(40 часов назад)</span>
+                  </p>
+                  <p class="photos__text">Где снег-то?</p>
+                  <button class="photos__rates" type="button" name="rate-post-6">
+                    <span>Нравится: <span class="photos__rates-value">150</span></span>
+                  </button>
+                </div>
+              </li>
+              <li class="photos__item">
+                <a class="photos__link" href="#">
+                  <img src="https://via.placeholder.com/280x180">
+                </a>
+                <div class="photos__wrapper">
+                  <p class="photos__title">
+                    <span class="photos__author">Надежда</span>
+                    <span class="photos__time">(40 часов назад)</span>
+                  </p>
+                  <p class="photos__text">
+                    Всем GM и взаимные лайки!
+                  </p>
+                  <button class="photos__rates" type="button" name="rate-post-7">
+                    <span>Нравится: <span class="photos__rates-value">2560</span></span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="page__container">
+      <footer class="page-footer">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link" href="index.html">
+            <img src="https://via.placeholder.com/146x40">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank" rel="noopener">
+                <span class="visually-hidden">группа ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank" rel="noopener">
+                <span class="visually-hidden">группа Фейсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com" target="_blank" rel="noopener">
+                <span class="visually-hidden">канал Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__developer developer">
+          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener">
+            <span class="developer__text">Разработано</span>
+            <img src="https://via.placeholder.com/27x34">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </div>
 </body>
 
 </html>
