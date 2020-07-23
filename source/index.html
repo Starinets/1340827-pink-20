@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
           <div class="main-nav__wrapper">
             <div class="main-nav__logo logo logo--active">
               <a class="logo__link" href="index.html" aria-label="Ссылка с логотипом на главную страницу">
-                <img src="https://via.placeholder.com/74x23">
+                <img src="img/logo-pink-white-mobile.svg" width="74" height="23">
               </a>
               <button class="logo__btn logo__btn--close" type="button">
                 <span class="visually-hidden">Открыть</span>
@@ -59,18 +60,20 @@
                 <li class="mobile-os__item">
                   <a class="mobile-os__link" href="https://www.apple.com/ru/ios/app-store/" target="_blank"
                     rel="noopener">
-                    <img src="https://via.placeholder.com/47x56">
+                    <img class="mobile-os__image" src="img/logo-apple.svg" alt="логотип iOS" width="47" height="56">
                   </a>
                 </li>
                 <li class="mobile-os__item">
                   <a class="mobile-os__link" href="https://play.google.com/store" target="_blank" rel="noopener">
-                    <img src="https://via.placeholder.com/43x47">
+                    <img class="mobile-os__image" src="img/logo-android.svg" alt="логотип Android" width="43"
+                      height="47">
                   </a>
                 </li>
                 <li class="mobile-os__item">
                   <a class="mobile-os__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"
                     target="_blank" rel="noopener">
-                    <img src="https://via.placeholder.com/44x41">
+                    <img class="mobile-os__image" src="img/logo-microsoft.svg" alt="логотип Windows Phone" width="44"
+                      height="41">
                   </a>
                 </li>
               </ul>
@@ -81,36 +84,36 @@
           </div>
         </section>
       </div>
-      <section class="page-main__information information">
+      <section class="page-main__about about">
         <div class="page__container">
           <h2 class="visually-hidden">Информация о приложении</h2>
-          <p class="information__promo">
+          <p class="about__promo">
             Устали от серости мегаполиса?
           </p>
-          <p class="information__promo information__promo--slim">
+          <p class="about__promo about__promo--slim">
             Нам есть, что вам предложить!
           </p>
         </div>
-        <div class="information__list-wrapper">
+        <div class="about__list-wrapper">
           <div class="page__container">
-            <ul class="information__list">
-              <li class="information__item">
-                <h3 class="information__title">Поднимает настроение</h3>
-                <p class="information__text">
+            <ul class="about__list">
+              <li class="about__item">
+                <h3 class="about__title">Поднимает настроение</h3>
+                <p class="about__text">
                   Приложение позволит вам победить осеннюю хандру и депрессию
                   буквально в несколько кликов!
                 </p>
               </li>
-              <li class="information__item">
-                <h3 class="information__title">Меняет мир вокруг</h3>
-                <p class="information__text">
+              <li class="about__item">
+                <h3 class="about__title">Меняет мир вокруг</h3>
+                <p class="about__text">
                   Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-                  <span class="information__text-newline"></span>усилить эффект
+                  <span class="about__text-newline"></span>усилить эффект
                 </p>
               </li>
-              <li class="information__item">
-                <h3 class="information__title">Заводит новых друзей</h3>
-                <p class="information__text">
+              <li class="about__item">
+                <h3 class="about__title">Заводит новых друзей</h3>
+                <p class="about__text">
                   Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
                   и заводите новых
                 </p>
@@ -118,18 +121,18 @@
             </ul>
           </div>
         </div>
-        <div class="information__wrapper">
+        <div class="about__wrapper">
           <div class="page__container">
-            <div class="information__effect">
-              <div class="information__effect-wrapper">
-                <h3 class="information__effect-title">Эффект
-                  <span class="information__newline"></span>на 24 часа!</h3>
-                <p class="information__effect-text">
+            <div class="about__effect">
+              <div class="about__effect-wrapper">
+                <h3 class="about__effect-title">Эффект
+                  <span class="about__newline"></span>на 24 часа!</h3>
+                <p class="about__effect-text">
                   Британские ученные провели исследования и доказали, что положительный эффект
-                  <span class="information__effect-text-newline"></span>
+                  <span class="about__effect-text-newline"></span>
                   от использования приложения длится целые сутки!
                 </p>
-                <a class="information__link" href="#" aria-label="Узнать больше об исследовании">
+                <a class="about__link" href="#" aria-label="Узнать больше об исследовании">
                   Узнать больше об исследовании
                 </a>
               </div>
@@ -348,7 +351,7 @@
           </div>
         </div>
         <div class="contacts__map" id="contacts__map">
-          <img src="https://via.placeholder.com/36x35">
+          <img src="img/icon-map-marker.svg" class="contacts__map-image" alt="Адрес комании: г. Санкт-Петербург, ул. Большая Конюшенная, 19/8" width="36" height="35">
           <iframe title="Карта с адресом компании Pink" class="contacts__map-iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056511!2d30.320853351384628!3d59.93871916896556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1585993359985!5m2!1sen!2sru"
             width="320" height="235" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
