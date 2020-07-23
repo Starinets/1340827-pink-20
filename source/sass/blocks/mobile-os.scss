@@ -1,0 +1,24 @@
+.mobile-os__list {
+  @include list-reset;
+  padding: 30px 20px 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.mobile-os__text {
+  font-weight: 300;
+  color: $white;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.mobile-os__btn {
+  width: 100%;
+}
+
+.mobile-os__link {
+  display: block;
+  height: 100%;
+}

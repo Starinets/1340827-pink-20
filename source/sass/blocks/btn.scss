@@ -1,0 +1,39 @@
+.btn {
+  display: inline-block;
+  padding: 22px  39px 22px 40px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $green;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green-darker;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $green-darker;
+  }
+
+  &:disabled {
+    background-color: $grey;
+    color: $white;
+    cursor: default;
+  }
+}
+
+.btn--disabled {
+  background-color: $grey;
+  color: $white;
+  cursor: default;
+}

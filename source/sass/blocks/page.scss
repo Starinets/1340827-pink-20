@@ -1,0 +1,24 @@
+.page__container {
+  max-width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 $gap-mobile;
+  box-sizing: border-box;
+}
+
+.page__container--full {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page__container--intro {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page__container--contest {
+  max-width: $mobile-width;
+  margin: 0 auto;
+  padding: 0;
+}

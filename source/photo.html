@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
           <div class="main-nav__wrapper">
             <div class="main-nav__logo logo logo--active">
               <a class="logo__link" href="index.html" aria-label="Ссылка с логотипом на главную страницу">
-                <img src="https://via.placeholder.com/74x23">
+                <img src="img/logo-pink-white-mobile.svg" width="74" height="23">
               </a>
               <button class="logo__btn logo__btn--close" type="button">
                 <span class="visually-hidden">Открыть</span>
@@ -60,7 +61,8 @@
         <div class="page-main__photos photos" id="photos">
           <div class="photos__item photos__item--panorama">
             <a class="photos__link" href="#">
-              <img src="https://via.placeholder.com/320x137">
+              <img class="photos__image photos__image--panorama" src="img/panorama-mobile@1x.jpg"
+                alt="Панорамная съемка с моста" width="320" height="137">
             </a>
             <div class="page__container">
               <div class="photos__wrapper photos__wrapper--panorama">
@@ -85,7 +87,8 @@
               <li class="photos__item">
                 <a class="photos__link" href="#">
                   <picture class="photos__picture">
-                    <img src="https://via.placeholder.com/280x180">
+                    <img src="img/photo-car-mobile@1x.jpg" class="photos__image" alt="Фотографируем автомобиль"
+                      width="280" height="180">
                   </picture>
                 </a>
                 <div class="photos__wrapper">
@@ -105,7 +108,8 @@
               </li>
               <li class="photos__item">
                 <a class="photos__link" href="#">
-                  <img src="https://via.placeholder.com/280x180">
+                  <img src="img/photo-drumset-mobile@1x.jpg" class="photos__image" alt="Ударная установка" width="280"
+                    height="180">
                 </a>
                 <div class="photos__wrapper">
                   <p class="photos__title">
@@ -124,7 +128,7 @@
               </li>
               <li class="photos__item">
                 <a class="photos__link" href="#">
-                  <img src="https://via.placeholder.com/280x180">
+                  <img src="img/photo-window-mobile@1x.jpg" class="photos__image" alt="Облака сквозь прозрачный потолок" width="280" height="180">
                 </a>
                 <div class="photos__wrapper">
                   <p class="photos__title">
@@ -143,7 +147,7 @@
               </li>
               <li class="photos__item">
                 <a class="photos__link" href="#">
-                  <img src="https://via.placeholder.com/280x180">
+                  <img src="img/photo-fair-mobile@1x.jpg" class="photos__image" alt="Кубанская бахча" width="280" height="180">
                 </a>
                 <div class="photos__wrapper">
                   <p class="photos__title">
@@ -162,7 +166,7 @@
               </li>
               <li class="photos__item">
                 <a class="photos__link" href="#">
-                  <img src="https://via.placeholder.com/280x180">
+                  <img src="img/photo-pov-mobile@1x.jpg" class="photos__image" alt="Склон горы" width="280" height="180">
                 </a>
                 <div class="photos__wrapper">
                   <p class="photos__title">
@@ -181,7 +185,7 @@
               </li>
               <li class="photos__item">
                 <a class="photos__link" href="#">
-                  <img src="https://via.placeholder.com/280x180">
+                  <img src="img/photo-wing-mobile@1x.jpg" class="photos__image" alt="Закат на фоне крыла самолета в облаках" width="280" height="180">
                 </a>
                 <div class="photos__wrapper">
                   <p class="photos__title">
@@ -207,46 +211,46 @@
             Выкладывайте все, что накопилось в телефоне!
           </p>
         </div>
-        <section class="page-main__application application">
+        <section class="page-main__constructor constructor">
           <div class="page__container">
             <h2 class="visually-hidden">Конструктор фотографий</h2>
-            <form class="application__form" action="https://echo.htmlacademy.ru" method="POST">
-              <div class="application__wrapper-picture">
-                <img src="https://via.placeholder.com/280x374">
+            <form class="constructor__form" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="constructor__wrapper-picture">
+                <img src="img/photo-road-mobile@1x.jpg" alt="Закат зимой, дорога" class="constructor__image" width="280" height="374">
               </div>
-              <div class="application__controls" id="application-controls">
-                <div class="application__filters">
-                  <nav class="application__buttons-list">
-                    <button class="application__button application__button--crop application__button--active"
+              <div class="constructor__controls" id="constructor-controls">
+                <div class="constructor__filters">
+                  <nav class="constructor__buttons-list">
+                    <button class="constructor__button constructor__button--crop constructor__button--active"
                       type="button" name="btn-crop" aria-label="Обрезать изображение"></button>
-                    <button class="application__button application__button--fill" type="button" name="btn-fill"
+                    <button class="constructor__button constructor__button--fill" type="button" name="btn-fill"
                       aria-label="Залить изображение"></button>
-                    <button class="application__button application__button--contrast" type="button" name="btn-contrast"
+                    <button class="constructor__button constructor__button--contrast" type="button" name="btn-contrast"
                       aria-label="Контрастность изображения"></button>
                   </nav>
-                  <div class="application__ranges-list">
+                  <div class="constructor__ranges-list">
                     <div
-                      class="application__ranges-item application__ranges-item--active range application__ranges-item--crop"
+                      class="constructor__ranges-item constructor__ranges-item--active range constructor__ranges-item--crop"
                       id="range-crop">
                       <div class="range__bar"></div>
                       <div class="range__toggle range__toggle--grey" id="toggle-crop"></div>
                     </div>
                     <input class="visually-hidden" id="value-crop" type="text" value="80" name="range-crop">
-                    <div class="application__ranges-item range application__ranges-item--fill" id="range-fill">
+                    <div class="constructor__ranges-item range constructor__ranges-item--fill" id="range-fill">
                       <div class="range__bar"></div>
                       <div class="range__toggle range__toggle--grey" id="toggle-fill"></div>
                     </div>
                     <input class="visually-hidden" id="value-fill" type="text" value="50" name="range-fill">
-                    <div class="application__ranges-item range application__ranges-item--contrast" id="range-contrast">
+                    <div class="constructor__ranges-item range constructor__ranges-item--contrast" id="range-contrast">
                       <div class="range__bar"></div>
                       <div class="range__toggle range__toggle--grey" id="toggle-contrast"></div>
                     </div>
                     <input class="visually-hidden" id="value-contrast" type="text" value="20" name="range-contrast">
                   </div>
                 </div>
-                <p class="application__wrapper-buttons" id="application-btn-form">
-                  <button class="application__btn-upload btn-round btn-round--upload" type="submit">Запостить</button>
-                  <button class="application__btn-reset btn-round btn-round--reset" id="app-ranges-reset"
+                <p class="constructor__wrapper-buttons" id="constructor-btn-form">
+                  <button class="constructor__btn-upload btn-round btn-round--upload" type="submit">Запостить</button>
+                  <button class="constructor__btn-reset btn-round btn-round--reset" id="app-ranges-reset"
                     type="reset">Отмена</button>
                 </p>
               </div>
@@ -260,7 +264,7 @@
       <footer class="page-footer">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
-            <img src="https://via.placeholder.com/146x40">
+            <img src="img/logo-pink-blue-mobile.svg" width="140" height="40">
           </a>
         </div>
         <div class="page-footer__social social">
@@ -286,7 +290,7 @@
         <div class="page-footer__developer developer">
           <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener">
             <span class="developer__text">Разработано</span>
-            <img src="https://via.placeholder.com/27x34">
+            <img src="img/logo-htmlacademy.svg" width="27" height="34">
           </a>
         </div>
       </footer>

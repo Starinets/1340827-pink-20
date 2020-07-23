@@ -1,0 +1,114 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 66px;
+  box-sizing: border-box;
+  background-color: rgba($black, 0.3);
+}
+
+.logo--active {
+  background-color: $blue-dark;
+}
+
+.logo__link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  line-height: 0;
+  color: $white;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}
+
+.logo__image-mobile {
+  margin: 0;
+  padding: 0;
+}
+
+.logo__image-tablet {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo__image-desktop {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo__btn {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  border-style: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: $white;
+    box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+  }
+
+  &:hover::before {
+    background-color: $pink;
+    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+  }
+
+  &:active::before {
+    background-color: $pink;
+    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+    opacity: 0.3;
+  }
+}
+
+.logo__btn--close {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    width: 30px;
+    height: 4px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $pink;
+    box-shadow: none;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+}

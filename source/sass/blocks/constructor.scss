@@ -1,0 +1,162 @@
+.constructor {
+  background-color: $grey-light;
+}
+
+.constructor__form {
+  margin: 0;
+  padding: 0;
+}
+
+.constructor__image {
+  width: 100%;
+  height: 100%;
+}
+
+.constructor__controls {
+  margin: 0;
+  padding: 0;
+}
+
+.constructor__buttons-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 35px 20px;
+  padding: 0;
+}
+
+.constructor__button {
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-style: none;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.constructor__button--crop {
+  background-image: url("../img/icon-editor-crop.svg");
+  background-position: center;
+  background-size: 48px 48px;
+
+  &:hover {
+    background-image: url("../img/icon-editor-crop.svg");
+  }
+
+  &:active,
+  &:focus {
+    background-image: url("../img/icon-editor-crop-active.svg");
+  }
+}
+
+.constructor__button--fill {
+  background-image: url("../img/icon-editor-fill.svg");
+  background-position: center;
+  background-size: 48px 48px;
+
+  &:hover {
+    background-image: url("../img/icon-editor-fill.svg");
+  }
+
+  &:active,
+  &:focus {
+    background-image: url("../img/icon-editor-fill-active.svg");
+  }
+}
+
+.constructor__button--contrast {
+  background-image: url("../img/icon-editor-contrast.svg");
+  background-position: center;
+  background-size: 32px 32px;
+
+  &:hover {
+    background-image: url("../img/icon-editor-contrast.svg");
+  }
+
+  &:active,
+  &:focus {
+    background-image: url("../img/icon-editor-contrast-active.svg");
+  }
+}
+
+.constructor__button--active.constructor__button--crop {
+  background-image: url("../img/icon-editor-crop-active.svg");
+  opacity: 1;
+}
+
+.constructor__button--active.constructor__button--fill {
+  background-image: url("../img/icon-editor-fill-active.svg");
+  opacity: 1;
+}
+
+.constructor__button--active.constructor__button--contrast {
+  background-image: url("../img/icon-editor-contrast-active.svg");
+  opacity: 1;
+}
+
+.constructor__ranges-list {
+  margin: 0 20px;
+  padding: 0;
+  padding-bottom: 24px;
+}
+
+.constructor__ranges-item {
+  position: relative;
+  display: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: -40px;
+    width: calc(100% + 80px);
+    height: 1px;
+    background-color: rgba($blue-dark, 0.1);
+  }
+}
+
+.constructor__ranges-item--crop .range__toggle {
+  left: 80%;
+}
+
+.constructor__ranges-item--fill .range__toggle {
+  left: 50%;
+}
+
+.constructor__ranges-item--contrast .range__toggle {
+  left: 20%;
+}
+
+.constructor__ranges-item--active {
+  display: flex;
+}
+
+.constructor__wrapper-buttons {
+  margin: 0;
+  padding: 49px 0 0;
+  line-height: 0;
+}
+
+.constructor__btn-upload {
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: transparent;
+}
+
+.constructor__btn-reset {
+  width: 100%;
+  background-color: transparent;
+}
