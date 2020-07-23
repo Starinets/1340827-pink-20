@@ -1,0 +1,45 @@
+.modal {
+  display: none;
+  width: 320px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background-color: $white;
+}
+
+.modal--active {
+  display: block;
+}
+
+.modal__title {
+  @include subtitle-mobile;
+  margin-top: 0;
+  padding-top: 46px;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+.modal__text {
+  margin-bottom: 37px;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+.modal__text--message {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.modal__btn-wrapper {
+  padding: 50px 22px 54px;
+  background-color: $grey-light;
+}
+
+.modal__btn-wrapper--error {
+  padding-top: 5px;
+  background-color: $white;
+}
+
+.modal__btn {
+  width: 100%;
+}

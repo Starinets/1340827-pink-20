@@ -1,0 +1,151 @@
+.contest {
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.contest__wrapper {
+  position: relative;
+  margin: 10px 0;
+  padding: 0 $gap-mobile;
+  text-align: left;
+  border-style: none;
+}
+
+.contest__wrapper--user {
+  padding-bottom: 15px;
+}
+
+.contest__wrapper--progress,
+.contest__wrapper--application {
+  padding-top: 38px;
+  padding-bottom: 46px;
+  background-color: $grey-light;
+}
+
+.contest__wrapper--contacts {
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+.contest__progress-list {
+  @include list-reset;
+  padding-top: 28px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contest__progress-item {
+  margin: 0;
+  padding: 0;
+  margin-top: 52px;
+}
+
+.contest__label {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 22px;
+  text-transform: uppercase;
+  color: $pink;
+  line-height: 30px;
+}
+
+.contest__label--center,
+.contest__label--comment {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.contest__legend {
+  position: absolute;
+  left: 0;
+  padding: 0 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $pink;
+  line-height: 18px;
+}
+
+.contest__legend--contacts {
+  display: none;
+}
+
+.contest__required-text {
+  margin: 35px 0 15px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 30px;
+}
+
+.contest__required-label {
+  color: $pink;
+}
+
+.contest__application-list {
+  @include list-reset;
+  padding-top: 28px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contest__application-item {
+  margin: 0;
+  padding: 0;
+  margin-top: 46px;
+}
+
+.contest__wrapper--comment {
+  margin-top: 18px;
+}
+
+.contest__wrapper--send {
+  margin: 0;
+  padding: 0;
+}
+
+.contest__input {
+  margin-bottom: 3px;
+}
+
+.contest__comment-text {
+  margin-top: 10px;
+  margin-bottom: 18px;
+  height: 201px;
+  resize: none;
+}
+
+.contest__btn-wrapper {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.contest__btn-submit {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contest__required-hidden {
+  display: none;
+}
+
+.contest__modal-error {
+  position: absolute;
+  top: 775px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.contest__modal-message {
+  position: absolute;
+  bottom: 450px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.contest__modal-text-newline {
+  display: block;
+}

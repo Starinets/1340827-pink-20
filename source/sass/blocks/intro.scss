@@ -1,0 +1,14 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.intro__wrapper {
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 17px;
+  background-color: $blue-darkest;
+}

@@ -1,0 +1,25 @@
+.developer__link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+  text-decoration: none;
+  color: $pink;
+
+  &:hover {
+    color: $blue-dark;
+  }
+
+  &:active {
+    color: rgba($blue-dark, 0.3);
+  }
+}
+
+.developer__text {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  margin-right: 14px;
+  line-height: 18px;
+  color: $blue-dark;
+}

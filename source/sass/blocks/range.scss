@@ -1,0 +1,38 @@
+.range {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.range__bar {
+  width: 100%;
+  height: 2px;
+  background-color: $blue-dark;
+}
+
+.range__toggle {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  width: 14px;
+  height: 15px;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  background-color: $white;
+  transform: translateY(50%);
+  cursor: pointer;
+
+  &:focus,
+  &:active,
+  &:hover {
+    background-color: $pink;
+  }
+}
+
+.range__toggle--grey {
+  background-color: $grey-light;
+}

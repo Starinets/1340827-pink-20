@@ -1,0 +1,69 @@
+.prices {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: $grey-light;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 125% auto;
+}
+
+.prices__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 62px;
+
+  overflow: hidden;
+}
+
+.prices__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 37px 0;
+  padding: 0;
+}
+
+.prices__toggle {
+  width: 13px;
+  height: 13px;
+  margin: 0 6px;
+  padding: 0;
+  background-color: $blue-dark;
+  opacity: 0.3;
+  border: 3px solid $white;
+  border-radius: 50%;
+}
+
+.prices__toggle--active {
+  opacity: 1;
+  border: 3px solid $blue-dark;
+  background-color: $white;
+}
+
+.prices__tariffs {
+  margin: 0;
+  padding: 0;
+  transform: translateX(0);
+}
+
+.prices__tariffs--base {
+  transform: translateX(280px);
+  transition: 0.5s;
+}
+
+.prices__tariffs--standard {
+  transform: translateX(0);
+  transition: 0.5s;
+}
+
+.prices__tariffs--unlimited {
+  transform: translateX(-280px);
+  transition: 0.5s;
+}
