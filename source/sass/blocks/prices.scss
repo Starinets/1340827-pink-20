@@ -67,3 +67,37 @@
   transform: translateX(-280px);
   transition: 0.5s;
 }
+
+@media (min-width: $tablet-width) {
+  .prices {
+    &::before {
+      height: 50px;
+    }
+  }
+
+  .prices__wrapper {
+    margin-top: 38px;
+  }
+
+  .prices__control {
+    display: none;
+  }
+
+  .prices__tariffs--base,
+  .prices__tariffs--standard,
+  .prices__tariffs--unlimited {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prices {
+    &::before {
+      height: 80px;
+    }
+  }
+
+  .prices__wrapper {
+    margin-top: 110px;
+  }
+}
