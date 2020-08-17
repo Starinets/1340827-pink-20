@@ -7,3 +7,9 @@
   padding: 0;
   padding-top: 11px;
 }
+
+@media (min-width: $desktop-width) {
+  .reviews__slider {
+    padding: 0 $gap-desktop;
+  }
+}

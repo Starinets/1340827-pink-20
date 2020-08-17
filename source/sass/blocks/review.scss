@@ -20,3 +20,47 @@
   padding: 0;
   line-height: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .review {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .review__author {
+    font-size: 20px;
+  }
+
+  .review__author-info {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+  }
+
+  .review__text {
+    margin-top: 0;
+    margin-bottom: 36px;
+    padding: 0;
+    font-size: 18px;
+    max-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__author {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .review__author-info {
+    font-size: 18px;
+  }
+
+  .review__text {
+    max-width: $tablet-width + 30px;
+  }
+}

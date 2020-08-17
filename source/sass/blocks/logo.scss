@@ -112,3 +112,53 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    align-items: flex-end;
+    padding: 27px 20px 43px;
+    height: 110px;
+  }
+
+  .logo__image-mobile {
+    display: none;
+  }
+
+  .logo__image-tablet {
+    display: block;
+  }
+
+  .logo__image-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo,
+  .logo--active {
+    position: static;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+    background-color: transparent;
+  }
+
+  .logo__image-mobile {
+    display: none;
+  }
+
+  .logo__image-tablet {
+    display: none;
+  }
+
+  .logo__image-desktop {
+    display: block;
+  }
+
+  .logo__btn,
+  .logo__btn--close {
+    display: none;
+  }
+}

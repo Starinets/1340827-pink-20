@@ -3,3 +3,15 @@
   z-index: 1;
   margin-bottom: -66px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__nav {
+    margin-bottom: -110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav {
+    background-color: rgba($black, 0.3);
+  }
+}
