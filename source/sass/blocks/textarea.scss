@@ -16,3 +16,10 @@
     border: 2px solid $pink;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .input {
+    padding-right: 19px;
+    padding-left: 19px;
+  }
+}
