@@ -10,3 +10,13 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
