@@ -44,3 +44,9 @@
 .checkbox__value:focus + .checkbox__label::before {
   box-shadow: 0 0 4px 0 $pink;
 }
+
+@media (min-width: $tablet-width) {
+  .checkbox__label {
+    padding-left: 58px;
+  }
+}

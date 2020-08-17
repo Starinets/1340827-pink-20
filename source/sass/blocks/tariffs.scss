@@ -158,3 +158,131 @@
     transform: rotate(-45deg);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .tariffs {
+    width: 620px;
+  }
+
+  .tariffs__header {
+    min-width: 155px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
+
+  .tariffs__header--hit {
+    position: relative;
+
+    &::before {
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-size: 61px 61px;
+    }
+
+    &::after {
+      top: 15px;
+      left: 4px;
+    }
+  }
+
+  .tariffs__title {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .tariffs__value {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .tariffs__option {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .tariffs__option--feature {
+    min-width: 153px;
+    margin: 0;
+    padding: 7px 15px;
+    text-transform: none;
+    background-color: $white-dark;
+    border: 2px solid $grey-light;
+  }
+
+  .tariffs__feature-value--on {
+    &::before {
+      top: -13px;
+      right: -13px;
+    }
+  }
+
+  .tariffs__feature-value--off {
+    &::before,
+    &::after {
+      top: 0;
+      right: -17px;
+    }
+  }
+
+  .tariffs__feature {
+    display: block;
+  }
+
+  .tariffs__feature-name {
+    display: none;
+  }
+
+  .tariffs__feature-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs {
+    width: 950px;
+  }
+
+  .tariffs__header {
+    min-width: 236px;
+    padding-top: 15px;
+    padding-bottom: 23px;
+  }
+
+  .tariffs__header--hit {
+    &::before {
+      top: 0;
+      width: 75px;
+      height: 75px;
+      background-image: url("../img/bg-hit.svg");
+      background-size: 75px 75px;
+    }
+
+    &::after {
+      top: 21px;
+      left: 12px;
+    }
+  }
+
+  .tariffs__title {
+    font-size: 18px;
+  }
+
+  .tariffs__value {
+    @include title-mobile;
+  }
+
+  .tariffs__option {
+    font-size: 18px;
+    padding: 14px 25px;
+  }
+
+  .tariffs__option--feature {
+    padding: 14px 25px;
+  }
+}

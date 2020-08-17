@@ -22,3 +22,10 @@
   background-color: rgba($red, 0.3);
   border: 2px solid $red;
 }
+
+@media (min-width: $tablet-width) {
+  .input {
+    padding-right: 19px;
+    padding-left: 19px;
+  }
+}
