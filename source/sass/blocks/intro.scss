@@ -12,3 +12,15 @@
   padding-bottom: 17px;
   background-color: $blue-darkest;
 }
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background-color: transparent;
+  }
+
+  .intro__wrapper {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+}
