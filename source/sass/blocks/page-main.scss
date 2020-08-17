@@ -6,13 +6,6 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-
-  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/bg-back-mobile@2x.jpg");
-  //   background-position: top center;
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  // }
 }
 
 .page-main--index {
@@ -20,13 +13,6 @@
   background-position: top 176px left, top center;
   background-repeat: no-repeat, no-repeat;
   background-size: 258px, 320px;
-
-  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
-  //   background-repeat: no-repeat, no-repeat;
-  //   background-position: top 176px left, top center;
-  //   background-size: 258px, contain;
-  // }
 }
 
 .page-main__title {
@@ -117,4 +103,197 @@
 
 .page-main__contest {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    padding-top: 178px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: auto 728px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-position: top center;
+    }
+  }
+
+  .page-main--index {
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: top 184px left -20px, top center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 700px auto, auto 728px;
+  }
+
+  .page-main__title {
+    @include title-table;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 75px;
+    text-align: center;
+  }
+
+  .page-main__title--index {
+    width: 245px;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding-bottom: 0;
+    line-height: 48px;
+    box-sizing: border-box;
+  }
+
+  .page-main__title--photo {
+    margin-bottom: 67px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .page-main__title--contest {
+    margin-bottom: 0;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .page-main__intro {
+    width: 340px;
+    margin-top: 31px;
+    margin-bottom: 110px;
+  }
+
+  .page-main__text {
+    padding: 28px $gap-tablet + 10px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: normal;
+    text-align: center;
+  }
+
+  .page-main__text--photo {
+    padding-top: 90px;
+    padding-bottom: 35px;
+  }
+
+  .page-main__text--contest {
+    margin-top: 7px;
+    margin-bottom: 0;
+    padding: 90px 30px 0;
+  }
+
+  .page-main__text--form-title {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .page-main__information {
+    padding-top: 47px;
+  }
+
+  .page-main__prices {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    padding-bottom: 70px;
+  }
+
+  .page-main__contacts {
+    margin-top: 45px;
+  }
+
+  .page-main__wrapper {
+    margin-top: 0;
+  }
+
+  .page-main__constructor {
+    margin-top: 40px;
+    padding: 57px 0 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: auto 854px;
+  }
+
+  .page-main--index {
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: top 209px right -111px, top center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1050px auto, auto 854px;
+  }
+
+  .page-main__title {
+    @include title-desktop;
+  }
+
+  .page-main__title--index {
+    margin-top: 40px;
+    margin-left: 25px;
+  }
+
+  .page-main__title--photo {
+    width: 655px;
+    margin: 0 auto;
+  }
+
+  .page-main__title--contest {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .page-main__text {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .page-main__text--photo {
+    padding-bottom: 53px;
+  }
+
+  .page-main__text--contest {
+    width: 780px;
+  }
+
+  .page-main__text--form-title {
+    display: inline;
+  }
+
+  .page-main__text-newline {
+    display: block;
+  }
+
+  .page-main__intro {
+    width: 320px;
+    margin-top: 53px;
+    margin-bottom: 115px;
+  }
+
+  .page-main__information {
+    padding-top: 70px;
+  }
+
+  .page-main__prices {
+    margin: 10px 0 0;
+    padding: 8px 0 97px;
+  }
+
+  .page-main__contacts {
+    margin-top: 63px;
+  }
+
+  .page-main__constructor {
+    margin: 37px auto 28px;
+    padding-bottom: 57px;
+  }
+
+  .page-main__wrapper {
+    margin-top: 22px;
+  }
+
+  .page-main__photos {
+    padding-top: 36px;
+  }
 }
