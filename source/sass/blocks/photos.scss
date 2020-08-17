@@ -115,3 +115,113 @@
     background-image: url("../img/icon-heart-active.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 32px;
+    justify-content: space-between;
+  }
+
+  .photos__item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    min-height: 455px;
+    height: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .photos__item--panorama {
+    width: 100%;
+    overflow-x: hidden;
+
+    &::before {
+      top: 57px;
+      right: 20px;
+    }
+  }
+
+  .photos__image--panorama {
+    min-width: 700px;
+  }
+
+  .photos__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 24px 31px 22px 28px;
+  }
+
+  .photos__wrapper--panorama {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 0;
+  }
+
+  .photos__title--panorama {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+
+  .photos__text {
+    flex-grow: 1;
+  }
+
+  .photos__text--panorama {
+    order: 1;
+    min-height: 0;
+  }
+
+  .photos__rates {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+
+    &::before {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .photos__rates--panorama {
+    margin: 0;
+    padding: 0;
+
+    &::before {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__list {
+    padding-top: 29px;
+    padding-left: 0;
+  }
+
+  .photos__item {
+    min-height: 555px;
+    margin-top: 22px;
+    margin-bottom: 32px;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  .photos__item--panorama {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+
+    &::before {
+      top: 53px;
+      right: 130px;
+    }
+  }
+}
