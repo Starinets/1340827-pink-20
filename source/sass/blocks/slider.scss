@@ -7,6 +7,7 @@
   @include list-reset;
   display: flex;
   flex-wrap: nowrap;
+  margin-top: 29px;
 }
 
 .slider__item {
@@ -79,8 +80,8 @@
     max-width: 31px;
     max-height: 31px;
     margin: 0;
-    margin-top: 70px;
-    margin-right: 5px;
+    margin-top: 96px;
+    margin-right: -3px;
     padding: 0;
     box-sizing: border-box;
     line-height: 0;
@@ -111,12 +112,12 @@
   .slider__list {
     position: relative;
     width: 690px;
-    padding-top: 157px;
+    padding-top: 150px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 44px;
+      top: 39px;
       right: 50%;
       width: 80px;
       height: 65px;

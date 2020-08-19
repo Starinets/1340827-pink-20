@@ -7,8 +7,13 @@
   @include title-mobile;
   margin: 0;
   padding: 12px $gap-mobile;
+  padding-top: 41px;
   text-align: center;
   color: $blue-dark;
+}
+
+.about__promo--slim {
+  padding-top: 14px;
 }
 
 .about__list-header {
@@ -81,11 +86,13 @@
   .about__promo {
     @include title-table;
     padding: 0;
+    padding-top: 48px;
   }
 
   .about__promo--slim {
     padding-right: 50px;
     padding-left: 50px;
+    padding-top: 5px;
   }
 
   .about__list-wrapper {
@@ -102,7 +109,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 55px;
+    padding-top: 43px;
     padding-bottom: 10px;
 
     &::after {
@@ -136,6 +143,10 @@
       padding-bottom: 20px;
       background-image: none;
     }
+  }
+
+  .about__title {
+    margin-top: 18px;
   }
 
   .about__text-newline {
@@ -219,11 +230,13 @@
     @include title-desktop;
     padding-right: $gap-desktop;
     padding-left: $gap-desktop;
+    padding-top: 67px;
   }
 
   .about__promo--slim {
     padding-right: $gap-desktop + 107px;
     padding-left: $gap-desktop + 107px;
+    padding-top: 5px;
     box-sizing: border-box;
   }
 
@@ -244,7 +257,7 @@
     justify-content: space-between;
     align-items: flex-start;
     margin: 0;
-    margin-top: 75px;
+    margin-top: 60px;
     padding-top: 0;
     padding-right: 30px;
     padding-left: 30px;
@@ -357,9 +370,15 @@
 
   .about__effect-title {
     width: 100%;
+    padding-left: 5px;
   }
 
   .about__effect-text {
     margin-bottom: 35px;
+    padding-left: 5px;
+  }
+
+  .about__effect-link {
+    padding-left: 5px;
   }
 }
