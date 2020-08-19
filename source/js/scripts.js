@@ -68,7 +68,7 @@
 })();
 
 (() => {
-  const formContest = document.querySelector(".contest");
+  const formContest = document.querySelector('.contest');
 
   if (formContest) {
     const userSurname = formContest.querySelector('#contest__user-surname');
@@ -112,12 +112,12 @@
 
         if (validationForm) {
           modalMessage.classList.add('modal--active');
-          userSurname.value = "";
-          userName.value = "";
-          userSecondname.value = "";
-          userEmail.value = "";
-          userTel.value = "";
-          userComment.value = "";
+          userSurname.value = '';
+          userName.value = '';
+          userSecondname.value = '';
+          userEmail.value = '';
+          userTel.value = '';
+          userComment.value = '';
         } else {
           modalError.classList.add('modal--active');
         }
