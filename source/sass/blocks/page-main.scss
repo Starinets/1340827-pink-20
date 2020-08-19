@@ -23,8 +23,6 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: top 176px left, top center;
     background-size: 258px, contain;
   }
 }
@@ -38,8 +36,8 @@
 }
 
 .page-main__title--index {
-  padding-top: 19px;
-  padding-bottom: 22px;
+  padding-top: 24px;
+  padding-bottom: 18px;
 }
 
 .page-main__title--contest {
@@ -133,7 +131,7 @@
 
   .page-main--index {
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-position: top 209px right, top center;
+    background-position: top 209px right calc(50% + 10px), top center;
     background-repeat: no-repeat, no-repeat;
     background-size: 700px auto, auto 728px;
 
@@ -186,6 +184,7 @@
     line-height: 30px;
     letter-spacing: normal;
     text-align: center;
+    margin-top: 38px;
   }
 
   .page-main__text--photo {
@@ -238,20 +237,12 @@
 
   .page-main--index {
     background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-position: top 209px calc(50% + 50px), top center;
+    background-position: top 209px right calc(50% - 70px), top center;
     background-repeat: no-repeat, no-repeat;
     background-size: 1050px auto, auto 854px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
-    }
-
-    @media (min-width: 1200px) {
-      background-position: top 209px right 3%, top center;
-    }
-
-    @media (min-width: 1440px) {
-      background-position: top 209px left 60%, top center;
     }
   }
 
@@ -260,13 +251,14 @@
   }
 
   .page-main__title--index {
-    margin-top: 40px;
+    margin-top: 36px;
     margin-left: 25px;
   }
 
   .page-main__title--photo {
     width: 655px;
     margin: 0 auto;
+    line-height: 66px;
   }
 
   .page-main__title--contest {
@@ -297,7 +289,7 @@
 
   .page-main__intro {
     width: 320px;
-    margin-top: 53px;
+    margin-top: 36px;
     margin-bottom: 115px;
   }
 
