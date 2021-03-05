@@ -9,7 +9,7 @@
     menuButton.classList.remove('logo__btn--close');
   });
 
-  menuButton.addEventListener('click', evt => {
+  menuButton.addEventListener('click', () => {
     menuContainer.classList.toggle('logo--active');
     menuItem.classList.toggle('menu--active');
     menuButton.classList.toggle('logo__btn--close');
